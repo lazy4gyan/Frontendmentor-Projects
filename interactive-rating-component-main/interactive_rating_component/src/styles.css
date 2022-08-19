@@ -1,0 +1,147 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --orange: hsl(25, 97%, 53%);
+  --container-bg: #1f2630;
+  --body-font: "Overpass", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+.container {
+  max-width: 25rem;
+  background-color: var(--container-bg);
+  padding: 3rem;
+  border-radius: 18px;
+  font-family: var(--body-font);
+}
+
+/* Front-side */
+
+.star-box {
+  background-color: var(--dark-blue);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+
+.feedback {
+    font-size:2rem;
+    font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.feedback-para {
+  color: var(--light-grey);
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.scale {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.scale > * {
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.scale > li:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  transition-timing-function: ease;
+}
+
+.active {
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.submit-btn {
+  background-color: var(--orange);
+  color: var(--white);
+  border-style: none;
+  padding: 0.9rem 0 0.9rem 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+/* Back-side  */
+.back-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thanks-box {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.response-message {
+  background-color: var(--dark-blue);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  color: var(--orange);
+  text-align: center;
+  margin-bottom: 3rem;
+  border-radius: 15px;
+}
+
+.thanks-note {
+  margin-bottom: 1rem;
+}
+
+.message {
+  text-align: center;
+  color: var(--light-grey);
+}
