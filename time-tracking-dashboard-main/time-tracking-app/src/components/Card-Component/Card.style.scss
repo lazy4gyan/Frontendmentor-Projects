@@ -1,0 +1,41 @@
+.card--container{
+    width:100%;
+    min-width:214px;
+    padding-top:2.4rem;
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: right 1rem top -0.5rem;
+    background-size: 3.8rem 3.8rem;
+  
+    .card--details{
+      background-color:hsl(235, 46%, 20%);
+      color: white;
+      border-radius: 14px;
+      padding:1rem 2rem;
+      cursor: pointer;
+  
+      .card-details--head{
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom:.5rem;
+      }
+  
+      .current{
+        font-size:3rem;
+        font-weight: 100;
+        margin-bottom: .5rem;
+      }
+  
+      .previous{
+        margin-bottom: 1rem;
+        color: hsl(236, 100%, 87%);
+      }
+    }
+  
+    .card--details:hover{
+        background-color:rgb(56, 62, 148);
+        color:hsl(0,0%,100%);
+      }
+  }
