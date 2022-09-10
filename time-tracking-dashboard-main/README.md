@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/lazy4gyan/Frontendmentor-Projects/tree/main/time-tracking-dashboard-main)
-- Live Site URL: [Add live site URL here](https://activity-time-tracking-dashboard.netlify.app/)
+- Solution URL: [Github](https://github.com/lazy4gyan/Frontendmentor-Projects/tree/main/time-tracking-dashboard-main)
+- Live Site URL: [Activity time tracking dashboard](https://activity-time-tracking-dashboard.netlify.app/)
 
 ## My process
 
