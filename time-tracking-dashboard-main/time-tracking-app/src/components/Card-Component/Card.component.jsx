@@ -3,7 +3,7 @@ import "./Card.style.scss";
 
 const Card = ({ activity, value }) => {
   const { title, timeframes } = activity;
-console.log(value)
+
   let current = "";
   let previous = "";
   let stat = "";
@@ -57,14 +57,16 @@ console.log(value)
           <span className="title">{title}</span>
           <Ellipse />
         </div>
-        <h2 className="current">
-          {current}
-          {current <= 1 ? "hr" : "hrs"}
-        </h2>
-        <p className="previous">
-          Last {stat} - {previous}
-          {previous <= 1 ? "hr" : "hrs"}
-        </p>
+        <div className="stats--container">
+          <h2 className="current">
+            {current}
+            {current <= 1 ? "hr" : "hrs"}
+          </h2>
+          <p className="previous">
+            Last {stat} - {previous}
+            {previous <= 1 ? "hr" : "hrs"}
+          </p>
+        </div>
       </div>
     </div>
   );

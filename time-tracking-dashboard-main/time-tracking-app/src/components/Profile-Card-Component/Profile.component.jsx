@@ -4,19 +4,21 @@ const ProfileCard = ({ clickHandler }) => {
   return (
     <aside className="profile--container">
       <div className="profile--details">
-        <div>
+        <div className="image--container">
           <img src={ProfilePic} alt="" />
         </div>
-        <span>Report for</span>
-        <h1 className="profile--name">Jeremy Robson</h1>
+        <div className="profile-name--container">
+          <span>Report for</span>
+          <h1 className="profile--name">Jeremy Robson</h1>
+        </div>
       </div>
-      <button onClick={clickHandler}>Daily</button>
-      <button onClick={clickHandler}>Weekly</button>
-      <button onClick={clickHandler}>Monthly</button>
+      <div className="btn-container">
+        <button onClick={clickHandler}>Daily</button>
+        <button onClick={clickHandler}>Weekly</button>
+        <button onClick={clickHandler}>Monthly</button>
+      </div>
     </aside>
   );
 };
 
 export default ProfileCard;
-
-

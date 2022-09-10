@@ -1,9 +1,14 @@
-.dashboard--container{
+
+@media (min-width:700px){
+  .dashboard--container{
     width: 100%;
     padding:2rem;
-    display: grid;
-    grid-template-columns:200px repeat(auto-fill);
-    gap:1rem;
-    display:flex;
+    // display: grid;
+    // grid-template-columns:200px repeat(auto-fill);
+    
+    display:inline-flex;
     justify-content: center;
+    gap:1rem;
   }
+}
+
